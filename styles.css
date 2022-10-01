@@ -1,0 +1,351 @@
+/* Utilities */
+* {
+    /* pushes items up */
+   margin: 0;
+   /* pushes items to side */
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    background-color: #000; 
+}
+
+.header {
+    width: 100%;
+    height: 800px;
+    background: url('drakeWebBackgroundImage.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.header h1 {
+    color: #fff;
+}
+
+.header p {
+    color: #fff;
+}
+
+/* Navbar styling */
+.navbar {
+    /* Pushes the list beside the logo */
+    display: flex;
+    /* Logo center besides list */
+    align-items: center;
+    /* Pushes logo all the way to the left &
+    pushes the list all way to right */
+    justify-content: space-between;
+    padding: 20px;
+    color: gray;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold; 
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+    color: #707070;
+    border-bottom: #fff;
+}
+
+.home-text{
+    padding: 190px 0;
+}
+
+.home-text h1 {
+    font-size: 50px;
+}
+
+.home-text p {
+    font-size: 20px;
+}
+
+/* Tour Section */
+.tour {
+    color: #fff;
+    height: 490px;
+}
+
+.tour #tour {
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.tour-dates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.cards .card {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.5),
+                5px 5px 5px rgba(0,0,0,0.05),
+                -5px -5px 5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .box .content h4 {
+    padding-bottom: 10px;
+}
+
+.button {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 4px 2px;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #707070;
+}
+
+/* Album Section */
+.album {
+    position: relative;
+    min-height: 100vh;
+    background: #111;
+}
+
+.album h2 {
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.album .album-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.album-gallery img {
+    width: 300px;
+    height: 300px;
+}
+
+/* Videos Section */
+.videos {
+    position: relative;
+    min-height: 100vh;
+    background: #111;
+}
+
+.videos h2 {
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.videos .video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+/* Contact / Newsletter */
+.newsletter {
+    color: #fff;
+    height: 300px;
+    background-color: #000;
+}
+
+.newsletter-form {
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.newsletter-form h2 {
+    text-transform: uppercase;
+    font-size: 26px;
+    /* width: 100%; */
+}
+
+.newsletter-form p {
+    padding: 20px 0;
+    color: #999;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.email-input {
+    width: 50%;
+    height: 46px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f4f4;
+    border: 1px solid #d4d4d4;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 50%;
+    height: 46px;
+    border: 0;
+    background-color: gray;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #111;
+}
+
+/* Footer */
+.footer {
+    height: 300px;
+    color: #fff;
+
+    position: absolute;
+    background-color: #111;
+    width: 100%;
+    padding-top: 20px;
+
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h2 {
+    color: gray;
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: center;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.social li {
+    margin: 0 10px;
+}
+
+.social li a {
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 8px;
+    border-radius: 50%;
+    width: 35px;
+}
+
+.social a:hover {
+    color:#333;
+}
+
+.footer-menu {
+    margin-bottom: 20px;
+}
+
+.footer-menu ul {
+    display: flex;
+}
+
+.footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+}
+
+.footer-menu ul li a {
+    color: #cfd2d6;
+    border: 1.3px solid white;
+    padding: 6px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    color:#333;
+}
+/* Media Queries */
